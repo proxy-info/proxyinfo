@@ -211,7 +211,7 @@
             if (address && port) {
               if (protocol) {
                 this.outputValue = `类型：${protocol}，主机 IP：${address}，端口：${port}，用户名：${username}，密码：${password}`;
-                this.curlCommand = `curl --proxy ${protocol}://${username}:${password}@${address}:${port} ip-api.com/json`;
+                this.curlCommand = `curl --proxy ${protocol}://${username}:${password}@${address}:${port} ipinfo.io`;
               } else {
                 this.outputValue = `主机 IP：${address}，端口：${port}，用户名：${username}，密码：${password}`;
                 this.curlCommand = `curl --proxy ${address}:${port} ip-api.com/json`;
